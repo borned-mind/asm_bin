@@ -26,7 +26,7 @@
 
 .bss
 	.space 1024
-.section .rodata
+.section .rodata /* section of read only data*/
 hello_string:
 	.asciz "Hello, world\n"
 	.set size_str, . - hello_string - 1
